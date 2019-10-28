@@ -1,0 +1,45 @@
+LOAD DATA LOCAL INFILE 'C:\\Users\\sapproject\\Desktop\\PAYSLIPSFILTER\\Employee PAN.csv' INTO TABLE test.upload
+FIELDS TERMINATED BY ',' LINES TERMINATED BY '\n';
+
+
+SELECT * FROM testing.new_table_field where status=1005;
+
+select * FROM testing.new_table_field where f1<0 and status=1001;
+
+delete FROM testing.new_table_field where f1<0 and status=1005;
+
+delete from testing.new_table_field;
+
+
+LOAD DATA LOCAL INFILE 'C:\\Users\\sapproject\\Desktop\\ty\\PAN\\TDS_MUM.csv' INTO TABLE testing.new_table_field
+FIELDS TERMINATED BY ',' LINES TERMINATED BY '\n';
+
+
+update testing.new_table_field set f1=ceil(f1) where f2=0 and status=1005;
+
+select ceil(200.20);
+
+LOAD DATA LOCAL INFILE 'C:\\Users\\sapproject\\Desktop\\ty\\PAN\\FinalSheet.csv' INTO TABLE testing.new_table_field
+FIELDS TERMINATED BY ',' LINES TERMINATED BY '\r\n' IGNORE 1 LINES;
+
+
+pa$$word/share
+
+
+LOAD DATA LOCAL INFILE 'C:\\Users\\sapproject\\Desktop\\ty\\PAN\\TDS_HYD_JULY-2018.csv' INTO TABLE testing.new_table_field
+FIELDS TERMINATED BY ',' LINES TERMINATED BY '\r\n' IGNORE 1 LINES;
+
+
+select employeeid,pan from hclhrm_prod.tbl_employee_personalinfo where employeeid in
+(select employeeid from hclhrm_prod.tbl_employee_primary where employeesequenceno in(108795));
+
+select employeeid from hclhrm_prod.tbl_employee_primary where employeesequenceno in(10998);
+
+LOAD DATA LOCAL INFILE 'C:\\Users\\sapproject\\Desktop\\TDS_DEC_2018\\UPLOAD_HYD.csv' INTO TABLE testing.new_table_field
+FIELDS TERMINATED BY ',' LINES TERMINATED BY '\r\n' IGNORE 1 LINES;
+
+LOAD DATA LOCAL INFILE 'D:\\Desktop_30_01_2018\\UPLOADS\\TDS_HYD_UPLOAD.csv' INTO TABLE testing.new_table_field
+FIELDS TERMINATED BY ',' LINES TERMINATED BY '\r\n' IGNORE 1 LINES;
+
+
+
